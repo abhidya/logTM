@@ -11,6 +11,7 @@ k is an integer equal to the log base 2 of a number. if the log base 2 of a numb
 log(n)
 
 # Output:
+k
 
 # Process:
 
