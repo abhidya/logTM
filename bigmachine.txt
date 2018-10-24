@@ -1,0 +1,114 @@
+// Save File for JFLAP-ISH
+// Version 1.00
+
+// State Format: name x y start accept
+STATES:
+	-100 41.000000 37.000000 true false
+	-99 133.000000 36.000000 false false
+	-98 237.000000 35.000000 false false
+	-97 334.000000 38.000000 false false
+	-96 29.000000 143.000000 false false
+	-95 127.000000 135.000000 false false
+	-94 406.000000 36.000000 false false
+	-93 224.000000 138.000000 false false
+	-92 35.000000 259.000000 false false
+	-91 38.000000 439.000000 false false
+	-90 223.000000 253.000000 false false
+	-89 491.000000 35.000000 false false
+	-88 292.000000 143.000000 false false
+	-87 389.000000 137.000000 false false
+	-86 483.000000 141.000000 false false
+	-50 483.000000 234.000000 false false
+	-49 480.000000 339.000000 false false
+	-48 362.000000 344.000000 false false
+	-47 265.000000 346.000000 false false
+	-46 266.000000 437.000000 false false
+	-45 357.000000 442.000000 false false
+	-44 197.000000 425.000000 false false
+	-42 524.000000 437.000000 false false
+	-43 156.000000 519.000000 false false
+	-41 518.000000 507.000000 false false
+	2 754.000000 443.000000 false false
+	3 864.000000 444.000000 false false
+	4 655.000000 576.000000 false false
+	1 655.000000 438.000000 false false
+	5 803.000000 575.000000 false false
+	6 962.000000 582.000000 false false
+
+// Transition format: fromStateId toStateId readCHar writeChar moveDirection
+// The Character '~' is the catchall character
+TRANSITION:
+	-96 -96 ~ ~ RIGHT
+	-95 -95 ~ ~ LEFT
+	-95 -93     RIGHT
+	-93 -93 ~ ~ RIGHT
+	-93 -92     LEFT
+	-92 -94 0 0 LEFT
+	-92 -92 1 0 STAY
+	-92 -91 2 1 RIGHT
+	-92 -91 3 2 RIGHT
+	-92 -91 4 3 RIGHT
+	-92 -91 5 4 RIGHT
+	-92 -91 6 5 RIGHT
+	-92 -91 7 6 RIGHT
+	-92 -91 8 7 RIGHT
+	-92 -91 9 8 RIGHT
+	-91 -90   0 LEFT
+	-91 -91 0 0 RIGHT
+	-90 -90 0 0 LEFT
+	-90 -92 ~ ~ STAY
+	-100 -99 L   RIGHT
+	-99 -98 O   RIGHT
+	-98 -97 G   RIGHT
+	-97 -96 (   RIGHT
+	-96 -95 )   LEFT
+	-94 -89   Y RIGHT
+	-89 -89 0 0 RIGHT
+	-89 -88   X RIGHT
+	-88 -87   0 RIGHT
+	-87 -86   0 LEFT
+	-86 -86 0 0 LEFT
+	-86 -86 X X LEFT
+	-86 -50 Y Y STAY
+	-50 -50 Y Y RIGHT
+	-50 -49 0 S RIGHT
+	-49 -49 0 0 RIGHT
+	-49 -48 X X RIGHT
+	-48 -48 S S RIGHT
+	-48 -47 0 S LEFT
+	-47 -47 S S LEFT
+	-47 -46 X X LEFT
+	-46 -46 0 0 LEFT
+	-46 -50 S S RIGHT
+	-48 -45     LEFT
+	-50 -44 X X RIGHT
+	-44 -44 S S RIGHT
+	-45 -45 S 0 LEFT
+	-45 -45 ~ ~ LEFT
+	-45 -42 Y Y STAY
+	-44 -43     LEFT
+	-43 -43 S   LEFT
+	-43 -43 X   LEFT
+	-43 -43 0 0 LEFT
+	-42 -42 ~ ~ RIGHT
+	-42 1 X X RIGHT
+	1 2 0 f RIGHT
+	1 4 d d LEFT
+	2 2 0 0 RIGHT
+	2 2 d d RIGHT
+	2 3   d LEFT
+	3 3 0 0 LEFT
+	3 1 f f RIGHT
+	3 3 d d LEFT
+	4 4 f f LEFT
+	4 4 d d LEFT
+	4 5     RIGHT
+	5 5 d 0 RIGHT
+	5 5 f 0 RIGHT
+	5 6     LEFT
+	6 6 ~ ~ LEFT
+
+// Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
+TAPE:
+	15
+	   Y00000X0000Y 
