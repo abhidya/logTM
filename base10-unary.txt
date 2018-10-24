@@ -3,47 +3,56 @@
 
 // State Format: name x y start accept
 STATES:
-	-10 41.000000 37.000000 true false
-	-9 133.000000 36.000000 false false
-	-8 237.000000 35.000000 false false
-	-7 334.000000 38.000000 false false
-	-6 29.000000 143.000000 false false
-	-5 127.000000 135.000000 false false
-	4 532.000000 33.000000 false true
-	3 224.000000 138.000000 false false
-	0 35.000000 259.000000 false false
-	1 38.000000 439.000000 false false
-	2 223.000000 253.000000 false false
+	-100 41.000000 37.000000 true false
+	-99 133.000000 36.000000 false false
+	-98 237.000000 35.000000 false false
+	-97 334.000000 38.000000 false false
+	-96 29.000000 143.000000 false false
+	-95 127.000000 135.000000 false false
+	-94 406.000000 36.000000 false false
+	-93 224.000000 138.000000 false false
+	-92 35.000000 259.000000 false false
+	-91 38.000000 439.000000 false false
+	-90 223.000000 253.000000 false false
+	-89 491.000000 35.000000 false false
+	-88 292.000000 143.000000 false false
+	-87 389.000000 137.000000 false false
+	-86 484.000000 135.000000 false true
 
 // Transition format: fromStateId toStateId readCHar writeChar moveDirection
 // The Character '~' is the catchall character
 TRANSITION:
-	-6 -6 ~ ~ RIGHT
-	-5 -5 ~ ~ LEFT
-	-5 3     RIGHT
-	3 3 ~ ~ RIGHT
-	3 0     LEFT
-	0 4 0 0 LEFT
-	0 0 1 0 STAY
-	0 1 2 1 RIGHT
-	0 1 3 2 RIGHT
-	0 1 4 3 RIGHT
-	0 1 5 4 RIGHT
-	0 1 6 5 RIGHT
-	0 1 7 6 RIGHT
-	0 1 8 7 RIGHT
-	0 1 9 8 RIGHT
-	1 2   0 LEFT
-	1 1 0 0 RIGHT
-	2 2 0 0 LEFT
-	2 0 ~ ~ STAY
-	-10 -9 L   RIGHT
-	-9 -8 O   RIGHT
-	-8 -7 G   RIGHT
-	-7 -6 (   RIGHT
-	-6 -5 )   LEFT
+	-96 -96 ~ ~ RIGHT
+	-95 -95 ~ ~ LEFT
+	-95 -93     RIGHT
+	-93 -93 ~ ~ RIGHT
+	-93 -92     LEFT
+	-92 -94 0 0 LEFT
+	-92 -92 1 0 STAY
+	-92 -91 2 1 RIGHT
+	-92 -91 3 2 RIGHT
+	-92 -91 4 3 RIGHT
+	-92 -91 5 4 RIGHT
+	-92 -91 6 5 RIGHT
+	-92 -91 7 6 RIGHT
+	-92 -91 8 7 RIGHT
+	-92 -91 9 8 RIGHT
+	-91 -90   0 LEFT
+	-91 -91 0 0 RIGHT
+	-90 -90 0 0 LEFT
+	-90 -92 ~ ~ STAY
+	-100 -99 L   RIGHT
+	-99 -98 O   RIGHT
+	-98 -97 G   RIGHT
+	-97 -96 (   RIGHT
+	-96 -95 )   LEFT
+	-94 -89   Y RIGHT
+	-89 -89 0 0 RIGHT
+	-89 -88   X RIGHT
+	-88 -87   0 RIGHT
+	-87 -86   0 RIGHT
 
 // Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
 TAPE:
-	3
-	    000000000
+	6
+	LOG(8)
