@@ -102,13 +102,14 @@ TRANSITION:
 	3 3 d d LEFT
 	4 4 f f LEFT
 	4 4 d d LEFT
-	4 5     RIGHT
 	5 5 d 0 RIGHT
 	5 5 f 0 RIGHT
 	5 6     LEFT
 	6 6 ~ ~ LEFT
+	6 -50   Y STAY
+	4 5 X X RIGHT
 
 // Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
 TAPE:
-	15
-	   Y00000X0000Y 
+	23
+	YYYYSSSSSSSSSXSSSSSSSSS0000000 
