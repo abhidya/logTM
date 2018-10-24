@@ -1,0 +1,32 @@
+// Save File for JFLAP-ISH
+// Version 1.00
+
+// State Format: name x y start accept
+STATES:
+	2 178.000000 74.000000 false false
+	3 188.000000 174.000000 false false
+	4 280.000000 68.000000 false false
+	5 276.000000 169.000000 false true
+	1 78.000000 169.000000 true false
+
+// Transition format: fromStateId toStateId readCHar writeChar moveDirection
+// The Character '~' is the catchall character
+TRANSITION:
+	1 2 0 f RIGHT
+	1 4 d d LEFT
+	2 2 0 0 RIGHT
+	2 2 d d RIGHT
+	2 3   d LEFT
+	3 3 0 0 LEFT
+	3 1 f f RIGHT
+	3 3 d d LEFT
+	4 4 f f LEFT
+	4 4 d d LEFT
+	4 5     RIGHT
+	5 5 f 0 RIGHT
+	5 5 d 0 RIGHT
+
+// Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
+TAPE:
+	9
+	 00000000 
