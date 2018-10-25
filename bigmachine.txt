@@ -172,5 +172,5 @@ TRANSITION:
 
 // Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
 TAPE:
-	5
-	    Y00000000000
+	0
+	LOG(11)
