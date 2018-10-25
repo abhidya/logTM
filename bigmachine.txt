@@ -35,6 +35,8 @@ STATES:
 	5 803.000000 575.000000 false false
 	6 962.000000 582.000000 false false
 	7 629.000000 55.000000 false true
+	8 199.000000 605.000000 false true
+	9 307.000000 660.000000 false false
 
 // Transition format: fromStateId toStateId readCHar writeChar moveDirection
 // The Character '~' is the catchall character
@@ -111,8 +113,21 @@ TRANSITION:
 	-44 -44 0 0 RIGHT
 	-43 -43 0   LEFT
 	-95 7 1 0 STAY
+	-43 -43 Y Y LEFT
+	-43 8     RIGHT
+	8 9 Y   RIGHT
+	9 9 Y Y RIGHT
+	9 -43   1 LEFT
+	9 -43 1 2 LEFT
+	9 -43 2 3 LEFT
+	9 -43 3 4 LEFT
+	9 -43 4 5 LEFT
+	9 -43 5 6 LEFT
+	9 -43 6 7 LEFT
+	9 -43 7 8 LEFT
+	9 -43 8 9 LEFT
 
 // Tape format: tapeChar(0) tapeChar(1) ... tapeChar(n)
 TAPE:
-	3
-	  YY          
+	5
+	     4                          
