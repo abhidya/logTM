@@ -9,6 +9,15 @@ This is an archived coursework/demo project for a Turing machine implementation 
 
 The repository is primarily data plus documentation. Validate changes by checking that the machine definition text files remain present and that markdown renders cleanly.
 
+Smoke check:
+
+```bash
+python3 verify_archive.py
+```
+
+The verifier checks that the expected machine artifacts are present and prints a
+few reference `ceil_log2` values for the documented behavior.
+
 # Constraints:
 
 n >= 1
