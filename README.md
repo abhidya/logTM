@@ -1,6 +1,14 @@
 # logTM
 A turing machine to solve logarithmic calcuations
 
+## Archive status
+
+This is an archived coursework/demo project for a Turing machine implementation of logarithm calculation. The `.txt` files are machine definitions or intermediate machines, and `STEM.jar` is the expected runner artifact.
+
+## Verification notes
+
+The repository is primarily data plus documentation. Validate changes by checking that the machine definition text files remain present and that markdown renders cleanly.
+
 # Constraints:
 
 n >= 1
